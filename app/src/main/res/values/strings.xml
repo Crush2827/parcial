@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Calculadora Avanzada</string>
+    <string name="num_a">Número A</string>
+    <string name="num_b">Número B</string>
+    <string name="btn_potencia">Potencia</string>
+    <string name="btn_modulo">Módulo</string>
+    <string name="btn_maximo">Máximo</string>
+    <string name="btn_limpiar">Limpiar</string>
+    <string name="btn_detalle">Ver detalle</string>
+    <string name="res_label">Resultado: </string>
+    <string name="icono_desc">Ícono de operación</string>
+    <string name="regresar">Regresar</string>
+</resources>

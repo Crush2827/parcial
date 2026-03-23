@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="24dp"
+    android:background="#E3F2FD"
+    android:id="@+id/main">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Operador Avanzado"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:textColor="@color/colorPrimaryDark"
+        android:gravity="center"
+        android:layout_marginBottom="24dp" />
+
+    <EditText
+        android:id="@+id/etNumeroA"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/num_a"
+        android:inputType="numberDecimal"
+        android:padding="12dp"
+        android:background="@android:drawable/edit_text"
+        android:layout_marginBottom="16dp" />
+
+    <EditText
+        android:id="@+id/etNumeroB"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/num_b"
+        android:inputType="numberDecimal"
+        android:padding="12dp"
+        android:background="@android:drawable/edit_text"
+        android:layout_marginBottom="24dp" />
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:columnCount="2"
+        android:alignmentMode="alignMargins"
+        android:columnOrderPreserved="false"
+        android:useDefaultMargins="true">
+
+        <Button android:id="@+id/btnPotencia" android:layout_width="0dp" android:layout_columnWeight="1" android:text="@string/btn_potencia" android:backgroundTint="@color/colorPrimary" android:textColor="@android:color/white" />
+        <Button android:id="@+id/btnModulo" android:layout_width="0dp" android:layout_columnWeight="1" android:text="@string/btn_modulo" android:backgroundTint="@color/colorPrimary" android:textColor="@android:color/white" />
+        <Button android:id="@+id/btnMaximo" android:layout_width="0dp" android:layout_columnWeight="1" android:text="@string/btn_maximo" android:backgroundTint="@color/colorPrimary" android:textColor="@android:color/white" />
+        <Button android:id="@+id/btnLimpiar" android:layout_width="0dp" android:layout_columnWeight="1" android:text="@string/btn_limpiar" android:backgroundTint="#FF5252" android:textColor="@android:color/white" />
+    </GridLayout>
+
+    <ImageView
+        android:id="@+id/ivOperacion"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_gravity="center"
+        android:layout_margin="24dp"
+        android:contentDescription="@string/icono_desc" />
+
+    <TextView
+        android:id="@+id/tvResultado"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/res_label"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:gravity="center" />
+
+    <Button
+        android:id="@+id/btnVerDetalle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="@string/btn_detalle"
+        android:backgroundTint="@color/colorAccent"
+        android:textColor="@android:color/white" />
+
+</LinearLayout>
